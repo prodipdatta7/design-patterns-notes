@@ -16,11 +16,11 @@ public class CurrentConditionDisplay : IObserver, IDisplay
         _weatherData = weatherData;
         weatherData.RegisterObserver(this);
     }
-    public void Update(float temperature, float humidity, float pressure)
+    public void Update()
     {
-        _temperature = temperature;
-        _humidity = humidity;
-        _pressure = pressure;
+        _temperature = _weatherData.Temperature;
+        _humidity = _weatherData.Humidity;
+        _pressure = _weatherData.Pressure;
         Display();
     }
 
@@ -28,5 +28,6 @@ public class CurrentConditionDisplay : IObserver, IDisplay
     {
         Console.WriteLine("Current conditions: {0}F degrees and {1}% humidity and {2}atm pressure", _temperature, _humidity, _pressure);
     }
+
     public void Remove () => _weatherData.RemoveObserver(this);
 }

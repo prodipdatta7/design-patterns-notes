@@ -8,12 +8,15 @@ public class WeatherData : ISubject
     private float _temperature;
     private float _humidity;
     private float _pressure;
+    public float Temperature => _temperature;
+    public float Humidity => _humidity;
+    public float Pressure => _pressure;
 
     public void NotifyObservers()
     {
         foreach (var observer in _observers)
         {
-            observer.Update(_temperature, _humidity, _pressure);
+            observer.Update();
         }
     }
 

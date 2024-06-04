@@ -18,7 +18,7 @@ public class ForecastDisplay : IObserver, IDisplay
         Console.WriteLine("Improving weather on the way!");
     }
 
-    public void Update(float temperature, float humidity, float pressure)
+    public void Update()
     {
         Display();
     }
