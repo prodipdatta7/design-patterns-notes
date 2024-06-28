@@ -1,5 +1,5 @@
-name: Bug Report
-description: File a bug report.
+name: Bug Report Form
+description: Please file a bug report.
 title: "[Bug]: "
 labels: ["bug"]
 projects: ["design-pattern-notes"]
@@ -22,12 +22,12 @@ body:
     id: reprod
     attributes:
       label: "Reproduction steps"
-      description: Please enter an explicit description of your issue
+      description: Please enter an explicit description of the steps to reproduce the bug. Modify as you like
       value: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
+        1. Go to: '...'
+        2. Click on: '....'
+        3. Scroll down to: '....'
+        4. See error:
       render: bash
     validations:
       required: true
@@ -43,22 +43,9 @@ body:
     id: screenshots
     attributes:
       label: Relevant Screenshots
-      description: If applicable, add screenshots to help explain your problem.
-      value: |
-        ![DESCRIPTION](LINK.png)
-      render: bash
+      description: If applicable, add screenshots to help explain your problem. Copy and Paste the link of the images
     validations:
       required: false
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
     id: logs
     attributes:
@@ -77,6 +64,16 @@ body:
         - Mac
     validations:
       required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
   - type: checkboxes
     id: terms
     attributes:
