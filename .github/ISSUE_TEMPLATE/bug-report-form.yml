@@ -10,6 +10,18 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Choose in which environment the issue happened
+      multiple: true
+      options:
+        - DEV
+        - STAGE
+        - PRODUCTION
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
