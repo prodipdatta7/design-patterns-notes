@@ -12,6 +12,7 @@ body:
       description: Choose in which environment the issue happened
       options:
         - label: DEV
+          required: true
         - label: STAGE
         - label: PRODUCTION
     validations:
