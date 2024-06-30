@@ -39,6 +39,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: what-is-expected
+    attributes:
+      label: What is expected?
+      description: Please enter an explicit description of your expectation
+      placeholder: Short and explicit description of the expectation
+    validations:
+      required: true
+  - type: textarea
     id: issue-link
     attributes:
       label: Link to the issue
@@ -48,17 +56,9 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-is-expected
-    attributes:
-      label: What is expected?
-      description: Please enter an explicit description of your expectation
-      placeholder: Short and explicit description of the expectation
-    validations:
-      required: true
-  - type: textarea
     id: screenshots
     attributes:
-      label: Relevant Screenshots
+      label: Relevant screenshots
       description: If applicable, add screenshots to help explain your problem. Copy and Paste the link to the images
     validations:
       required: false
