@@ -2,7 +2,7 @@ name: Bug Report Form
 description: Please file a bug report.
 title: "[Bug]: "
 labels: ["bug"]
-projects: ["design-pattern-notes"]
+projects: ["https://github.com/users/prodipdatta7/projects/1"]
 assignees: []
 body:
   - type: dropdown
