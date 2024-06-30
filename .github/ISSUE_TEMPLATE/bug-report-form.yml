@@ -5,16 +5,15 @@ labels: ["bug"]
 projects: ["Task Management"]
 assignees: []
 body:
-  - type: dropdown
+  - type: checkboxes
     id: environment
     attributes:
       label: Environment
       description: Choose in which environment the issue happened
-      multiple: true
       options:
-        - DEV
-        - STAGE
-        - PRODUCTION
+        - label: DEV
+        - label: STAGE
+        - label: PRODUCTION
     validations:
       required: true
   - type: textarea
