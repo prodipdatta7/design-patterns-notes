@@ -10,6 +10,7 @@ body:
     attributes:
       label: Environment
       description: Choose in which environment the issue happened
+      multiple: true
       options:
         - DEV
         - STAGE
